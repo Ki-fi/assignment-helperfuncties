@@ -1,0 +1,19 @@
+.salesOverview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.soldProducts {
+    flex-grow: 1;
+    border: #068a61 solid 1px;
+    border-radius: 4px;
+    background-color: #edfaf6;
+    color: #068a61;
+    text-align: center;
+}
+
+.soldProducts div {
+    padding: 24px;
+}
