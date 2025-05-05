@@ -5,15 +5,32 @@
     gap: 32px;
 }
 
-.soldProducts {
+.soldProducts, .purchasedProducts, .toBeSoldProducts {
     flex-grow: 1;
-    border: #068a61 solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     border-radius: 4px;
-    background-color: #edfaf6;
-    color: #068a61;
-    text-align: center;
+    padding: 16px;
 }
 
-.soldProducts div {
-    padding: 24px;
+.soldProducts {
+    border: #068a61 solid 1px;
+    background-color: #edfaf6;
+    color: #068a61;
 }
+
+.purchasedProducts {
+    border: #06518a solid 1px;
+    background-color: #edf6fc;
+    color: #06518a;
+}
+
+.toBeSoldProducts {
+    border: #d92f0d solid 1px;
+    background-color: #faece8;
+    color: #d92f0d;
+}
+
+
