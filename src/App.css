@@ -33,4 +33,21 @@
     color: #d92f0d;
 }
 
+.bestSoldProduct {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-around;*/
+    align-items: center;
+    border-radius: 4px;
+    padding: 16px;
+    border: black dashed 1px;
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.bestSoldProduct img {
+    width: 200px;
+    padding: 32px;
+}
+
 
