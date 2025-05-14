@@ -8,6 +8,8 @@ import generateTvPrice from "./helpers/generateTvPrice.js";
 import {bestSellingTv} from "./constants/inventory.js";
 import generateScreenSizes from "./helpers/generateScreenSizes.js";
 import resultOefenbestand from "./constants/oefenbestand.js";
+import {allBrands} from "./helpers/listAllBrands.jsx";
+import allTvs from "./helpers/listAllTvs.jsx";
 
 function App() {
     resultOefenbestand();
@@ -66,6 +68,8 @@ function App() {
             <button type="button" onClick={logClickButton2}>Goedkoopste eerst</button>
             <button type="button" onClick={logClickButton3}>Meest geschikt voor sport</button>
             </div>
+            {/*<div>{allBrands}</div>*/}
+            <article className="listAllTvs">{allTvs}</article>
         </section>
       </>
   )

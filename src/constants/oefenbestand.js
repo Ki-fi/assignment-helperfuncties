@@ -32,7 +32,7 @@ function resultOefenbestand() {
     // console.log(tvInfo);
     // console.log(tvBrandsAndNames);
     // console.log(biggerThan65);
-    console.log(hasAmbilight);
+    // console.log(hasAmbilight);
 }
 
 export default resultOefenbestand;

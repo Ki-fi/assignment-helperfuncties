@@ -59,3 +59,9 @@
     gap: 8px;
 }
 
+.listAllTvs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 0;
+}
