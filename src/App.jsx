@@ -7,8 +7,11 @@ import generateTvName from "./helpers/generateTvName.js";
 import generateTvPrice from "./helpers/generateTvPrice.js";
 import {bestSellingTv} from "./constants/inventory.js";
 import generateScreenSizes from "./helpers/generateScreenSizes.js";
+import resultOefenbestand from "./constants/oefenbestand.js";
 
 function App() {
+    resultOefenbestand();
+
     function logClickButton1(){
         console.log("Meest verkochte eerst")
     }
