@@ -1,5 +1,6 @@
 import {inventory} from "../constants/inventory.js";
-import screenSizesMapped from "./generateScreenSizes.js";
+import tvOptions from "./generateTvOptions.jsx";
+import screenSizes from "./generateScreenSizes.js";
 
 
 const allTvs = inventory.map((product) => {
@@ -9,8 +10,8 @@ const allTvs = inventory.map((product) => {
         <div>
             <h4>{`${product.brand} ${product.type} - ${product.name}`}</h4>
             <h3>{`€${product.price},-`}</h3>
-            <p>{screenSizesMapped(product)}
-            </p>
+            <p>{screenSizes(product)}</p>
+            <p>{tvOptions(product)}</p>
         </div>
         </div>
         </>

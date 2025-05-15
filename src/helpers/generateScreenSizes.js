@@ -23,7 +23,7 @@ function screenSizesForlooped() {
 
 // Gemaakt voor deel 2 mbv .map methode
 
-function screenSizesMapped(product){
+function screenSizes(product){
     const screenSize = product.availableSizes.map(size => {
         return `${size} inches (${(size * 2.45).toFixed(0)} cm)`
     });
@@ -35,4 +35,4 @@ function screenSizesMapped(product){
     return screenSize;
 }
 
-export default screenSizesMapped;
+export default screenSizes;

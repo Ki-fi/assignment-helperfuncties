@@ -6,11 +6,10 @@ import calculateToBeSoldTvs from "./helpers/calculateToBeSoldTvs.js";
 import generateTvName from "./helpers/generateTvName.js";
 import generateTvPrice from "./helpers/generateTvPrice.js";
 import {bestSellingTv} from "./constants/inventory.js";
-import generateScreenSizes from "./helpers/generateScreenSizes.js";
 import resultOefenbestand from "./constants/oefenbestand.js";
 import {allBrands} from "./helpers/listAllBrands.jsx";
 import allTvs from "./helpers/listAllTvs.jsx";
-import screenSizesMapped from "./helpers/generateScreenSizes.js";
+import screenSizes from "./helpers/generateScreenSizes.js";
 
 function App() {
     resultOefenbestand();
@@ -51,7 +50,7 @@ function App() {
                   <div>
                   <h4>{generateTvName()}</h4>
                   <h3>{generateTvPrice()}</h3>
-                  <p>{screenSizesMapped(bestSellingTv)}</p>
+                  <p>{screenSizes(bestSellingTv)}</p>
                       <p>
                       <img src="src/assets/check.png" className="icon" alt="icon"/>wifi
                       <img src="src/assets/minus.png" className="icon" alt="icon"/>speech
