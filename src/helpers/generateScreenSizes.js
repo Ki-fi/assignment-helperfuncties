@@ -1,6 +1,9 @@
 import {bestSellingTv} from "../constants/inventory.js";
 
-function generateScreenSizes() {
+
+// Gemaakt voor deel 1 mbv for-loop
+
+function screenSizesForlooped() {
 
     let screenSize = ""
 
@@ -18,4 +21,18 @@ function generateScreenSizes() {
 
 }
 
-export default generateScreenSizes;
+// Gemaakt voor deel 2 mbv .map methode
+
+function screenSizesMapped(product){
+    const screenSize = product.availableSizes.map(size => {
+        return `${size} inches (${(size * 2.45).toFixed(0)} cm)`
+    });
+
+    if (product.availableSizes.length - 1) {
+        return screenSize.join(' | ');
+    }
+
+    return screenSize;
+}
+
+export default screenSizesMapped;
