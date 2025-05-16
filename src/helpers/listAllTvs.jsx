@@ -5,7 +5,7 @@ import screenSizes from "./generateScreenSizes.js";
 
 const allTvs = inventory.map((product) => {
     return <>
-        <div  className="bestSellingProduct">
+        <div  className="allProducts">
         <img src={product.sourceImg} className="imgBestSellingTv" alt="img-tv"/>
         <div>
             <h4>{`${product.brand} ${product.type} - ${product.name}`}</h4>

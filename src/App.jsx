@@ -10,19 +10,23 @@ import resultOefenbestand from "./constants/oefenbestand.js";
 import {allBrands} from "./helpers/listAllBrands.jsx";
 import allTvs from "./helpers/listAllTvs.jsx";
 import screenSizes from "./helpers/generateScreenSizes.js";
+import sortByBestSelling from "./helpers/sortByBestSelling.js";
+import sortByPrice from "./helpers/sortByPrice.js";
+import sortByRefreshrate from "./helpers/sortByRefreshrate.js";
 
 function App() {
     resultOefenbestand();
 
-    function logClickButton1(){
-        console.log("Meest verkochte eerst")
-    }
-    function logClickButton2(){
-        console.log("Goedkoopste eerst")
-    }
-    function logClickButton3(){
-        console.log("Meest geschikt voor sport")
-    }
+    // function logClickButton1(){
+    //     console.log("Meest verkochte eerst")
+    // }
+    // function logClickButton2(){
+    //     console.log("Goedkoopste eerst")
+    // }
+    // function logClickButton3(){
+    //     console.log("Meest geschikt voor sport")
+    // }
+
   return (
       <>
         <h1>Tech It Easy dashboard</h1>
@@ -64,9 +68,9 @@ function App() {
         <section>
             <h3>Alle tv's</h3>
             <div className="buttonRow">
-            <button type="button" onClick={logClickButton1}>Meest verkochte eerst</button>
-            <button type="button" onClick={logClickButton2}>Goedkoopste eerst</button>
-            <button type="button" onClick={logClickButton3}>Meest geschikt voor sport</button>
+            <button type="button" onClick={sortByBestSelling}>Meest verkochte eerst</button>
+            <button type="button" onClick={sortByPrice}>Goedkoopste eerst</button>
+            <button type="button" onClick={sortByRefreshrate}>Meest geschikt voor sport</button>
             </div>
             {/*<div>{allBrands}</div>*/}
             <article className="listAllTvs">{allTvs}</article>
